@@ -37,12 +37,12 @@ sayHello();
 
 //write a function that returns the longest word in a sentence
 
-function longestWord(){
-    let whoAreYou ="we are begining javascript now";
-    console.log(whoAreYou.length)
-      console.log(whoAreYou.split(" "));
-      console.log(Math.max (whoAreYou.split(" ")[0].length, whoAreYou.split(" ")[1].length, whoAreYou.split(" ")[2].length, whoAreYou.split(" ")[3].length, whoAreYou.split(" ")[4].length));
+// function longestWord(){
+//     let whoAreYou ="we are begining javascript now";
+//     console.log(whoAreYou.length)
+//       console.log(whoAreYou.split(" "));
+//       console.log(Math.max (whoAreYou.split(" ")[0].length, whoAreYou.split(" ")[1].length, whoAreYou.split(" ")[2].length, whoAreYou.split(" ")[3].length, whoAreYou.split(" ")[4].length));
 
 
-}
-longestWord();
+// }
+// longestWord();

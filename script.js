@@ -1,17 +1,17 @@
-function myData() {
+// function myData() {
   //this is function declaration
-}
-myData();
+// }
+// myData();
 
-const myName = function () {
-  //this  is function expression
-};
-myName();
+// const myName = function () {
+//   //this  is function expression
+// };
+// myName();
 
-const sayHello = () => {
-  //this is arrow function
-};
-sayHello();
+// const sayHello = () => {
+//   //this is arrow function
+// };
+// sayHello();
 // calculate the area of a cone
 // 1/3 pie r square h
 // function areaOfACone(r, h) {

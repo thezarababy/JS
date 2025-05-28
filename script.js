@@ -46,3 +46,78 @@
 
 // }
 // longestWord();
+
+// let firstName = "Bro";
+// console.log(typeof firstName);
+// console.log(`your name is ${firstName}`);
+// let online = true;
+// let isStudentAdmitted = false;
+// console.log(`sis is online:${online}`);
+// console.log(`is StudentAmitted: ${isStudentAdmitted}`)
+
+// let fullName= "Joy Okoduwa"
+// let age = 25;
+// let student = false;
+
+// document.getElementById("p1").textContent = ` Your name is ${fullName}`;
+// document.getElementById("p2").textContent =`you are ${age} years old`;
+// document.getElementById("p3").textContent = `student: ${student}`;
+//  let students = 30
+//  students= students + 1;
+//  students = students - 1;
+//  students = students*2;
+//  students =students / 2;
+//  students =students **3;
+//0R
+// students+=1;
+// students-=1;
+// students/=2;
+// students**=2;
+// students%=4;
+//  console.log(students)
+
+//operator prescedence
+// 1. parenthesis ()
+// 2. exponents **
+// 3. multiplication & division &modulo * / % 
+// 4. addition & subtraction + - //
+// let result= 6 / 2 ** (2+5);
+// console.log(result.toFixed(2));
+
+// let userNamejoy= window.prompt("what is your username?");
+// console.log(userName)
+// let btn=document.getElementById("btn");
+// function display(){
+// let input = document.getElementById("myText").value;
+// document.getElementById("intro").textContent = `welcome ${input}`
+// // console.log(input);
+
+// }
+// btn.addEventListener("click",display)
+
+//data conversion
+
+// let age = window.parseInt(prompt("How old are you?"));
+// // age = Number(age);
+// age+=1;
+// console.log(age);
+
+// const PI = 3.142;
+//  let radius = window.parseInt(prompt("Enter the radius"));
+//  let circumference = 2 * PI * radius;
+
+// console.log(circumference.toFixed(3))
+// let submit = document.getElementById("submit");
+
+
+// function result(){
+//   const PI = 3.142;
+//   let radius = document.getElementById("radius").value;
+//   let circumference = 2 * PI * radius ;
+//   document.getElementById("myH3").textContent = circumference.toFixed(2)
+  
+// }
+// submit.addEventListener("click", result)
+
+
+

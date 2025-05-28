@@ -119,5 +119,45 @@
 // }
 // submit.addEventListener("click", result)
 
+//COUNTER PROGRAM
+// const decrease = document.getElementById("btn1");
+// const reset= document.getElementById("btn2");
+// const increase = document.getElementById("btn3");
+// const countLabel =document.getElementById("countLabel");
+// let count = 0;
 
+
+// function toIncrease(){
+//   count++;
+//   countLabel.textContent = count;
+// }
+
+// increase.addEventListener("click", toIncrease)
+// increase.onclick= function(){
+  
+//   count++;
+//   countLabel.textContent = count;
+// }
+// decrease.onclick= function(){
+//   count--;
+//   countLabel.textContent = count;
+// }
+// reset.onclick= function(){
+//   count=0;
+//   countLabel.textContent = count;
+// }
+
+//RANDOM NUMBER GENERATOR
+// let randomNum= Math.floor(Math.random()*6) +1 ;   //gives you random number btw 0 and 6
+// console.log(randomNum);
+
+// const myBtn = document.getElementById("myBtn");
+// const myLabel =document.getElementById("myLabel");
+// const min=1;
+// const max=2;
+// let randomNum;
+// myBtn.onclick=()=>{
+//   randomNum= Math.floor(Math.random()*6)+min;
+//   myLabel.textContent =randomNum;
+// }
 

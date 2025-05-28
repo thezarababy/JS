@@ -160,4 +160,23 @@
 //   randomNum= Math.floor(Math.random()*6)+min;
 //   myLabel.textContent =randomNum;
 // }
+//IF
+// let time = 9;
+// if (time<12){
+//   console.log("good morning");
+// }else{
+//   console.log("good afternoon")
+// }
+// let age = 25;
+// let hasLiscence= false;
+// if(age>=16){
+//   console.log("you are old enough to drive");
+//   if(hasLiscence){
+//       console.log("you have your liscence");
+//   }else{
+//       console.log("you do not have your liscence yet")
+//   }
+// }else{
+//   console.log("you must be 16+ to have a liscence")
+// }
 

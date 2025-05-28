@@ -180,3 +180,19 @@
 //   console.log("you must be 16+ to have a liscence")
 // }
 
+const myText = document.getElementById("myText");
+const mySubmit = document.getElementById("mySubmit");
+const result = document.getElementById("result");
+let age ;
+mySubmit.onclick=()=>{
+  age = parseInt(myText.value);
+
+  if(age>=16){
+    result.textContent= "you are old enough to drive"
+    console.log();
+    if(hasLiscence){
+      result.textContent= "you have your liscence"
+    }}else{
+      result.textContent ="you do not have your liscence yet"
+   }
+}

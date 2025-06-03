@@ -180,19 +180,98 @@
 //   console.log("you must be 16+ to have a liscence")
 // }
 
-const myText = document.getElementById("myText");
-const mySubmit = document.getElementById("mySubmit");
-const result = document.getElementById("result");
-let age ;
-mySubmit.onclick=()=>{
-  age = parseInt(myText.value);
+// const myText = document.getElementById("myText");
+// const mySubmit = document.getElementById("mySubmit");
+// const result = document.getElementById("result");
+// let age ;
+// mySubmit.onclick=()=>{
+//   age = parseInt(myText.value);
 
-  if(age>=16){
-    result.textContent= "you are old enough to drive"
-    console.log();
-    if(hasLiscence){
-      result.textContent= "you have your liscence"
-    }}else{
-      result.textContent ="you do not have your liscence yet"
-   }
+//   if(age>=16){
+//     result.textContent= "you are old enough to drive"
+//     console.log();
+//     if(hasLiscence){
+//       result.textContent= "you have your liscence"
+//     }}else{
+//       result.textContent ="you do not have your liscence yet"
+//    }
+// }
+//Promise
+//new Promise((resolve,reject )=>{asynchronous code})
+//})
+ //Do these tasks in order
+ //Clean the house
+ //write some codes
+ //go for class
+ //go for meeting
+ //come back home
+ 
+
+
+// setTimeout(writeCode,2500)
+// setTimeout(goToClass,500)
+// setTimeout(goToMeeting,2000)
+// setTimeout(comeBackHome,1000)
+// function cleanHouse(){
+//   return new Promise((resolve,reject) => { 
+//     setTimeout(()=> {
+//     resolve("clean the house");
+//     },1500);
+//   });
+  
+// }
+// function writeCode(callback){
+//   console.log("write some code");
+//   callback()
+// }
+// function goToClass(callback){
+//   console.log("go to class");
+//   callback()
+// }
+// function goToMeeting(callback){
+//   console.log("go to meeting");
+//   callback()
+// }
+// function comeBackHome(callback){
+//   console.log("come back home");
+//   callback
+// }
+// cleanHouse(()=>{
+//   writeCode(()=>{
+//     goToClass(()=>{
+//       goToMeeting(()=>{
+//         comeBackHome(()=>console.log("you have finishes the task for the day"));
+//       });
+//     });
+//   });
+// });
+
+//checkBox and Radio btn
+
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCard = document.getElementById("masterCard");
+const payPal = document.getElementById("payPal");
+const submit = document.getElementById("submit");
+const subResult = document.getElementById("subResult");
+const paymentResult =document.getElementById("paymentResult");
+
+submit.onclick = function(){
+  if(myCheckBox.checked){
+    subResult.textContent = " 🎉congratulations you have successfuly subscribed"
+  }else{
+    subResult.textContent ="❗ Oops! you have to subscribe first"
+  }if(visaBtn.checked){
+    paymentResult.textContent = "you are paying with visa"
+  }else if(masterCard.checked){
+    paymentResult.textContent = "you are paying with master card"
+  }else if(payPal.checked){
+    paymentResult.textContent = "you are paying with PayPal"
+  }else{
+    paymentResult.textContent = "you must select a payment method"
+  }
 }
+
+
+ 
+ 

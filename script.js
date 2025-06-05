@@ -1,5 +1,5 @@
 // function myData() {
-  //this is function declaration
+//this is function declaration
 // }
 // myData();
 
@@ -43,7 +43,6 @@
 //       console.log(whoAreYou.split(" "));
 //       console.log(Math.max (whoAreYou.split(" ")[0].length, whoAreYou.split(" ")[1].length, whoAreYou.split(" ")[2].length, whoAreYou.split(" ")[3].length, whoAreYou.split(" ")[4].length));
 
-
 // }
 // longestWord();
 
@@ -79,7 +78,7 @@
 //operator prescedence
 // 1. parenthesis ()
 // 2. exponents **
-// 3. multiplication & division &modulo * / % 
+// 3. multiplication & division &modulo * / %
 // 4. addition & subtraction + - //
 // let result= 6 / 2 ** (2+5);
 // console.log(result.toFixed(2));
@@ -109,13 +108,12 @@
 // console.log(circumference.toFixed(3))
 // let submit = document.getElementById("submit");
 
-
 // function result(){
 //   const PI = 3.142;
 //   let radius = document.getElementById("radius").value;
 //   let circumference = 2 * PI * radius ;
 //   document.getElementById("myH3").textContent = circumference.toFixed(2)
-  
+
 // }
 // submit.addEventListener("click", result)
 
@@ -126,7 +124,6 @@
 // const countLabel =document.getElementById("countLabel");
 // let count = 0;
 
-
 // function toIncrease(){
 //   count++;
 //   countLabel.textContent = count;
@@ -134,7 +131,7 @@
 
 // increase.addEventListener("click", toIncrease)
 // increase.onclick= function(){
-  
+
 //   count++;
 //   countLabel.textContent = count;
 // }
@@ -199,26 +196,24 @@
 //Promise
 //new Promise((resolve,reject )=>{asynchronous code})
 //})
- //Do these tasks in order
- //Clean the house
- //write some codes
- //go for class
- //go for meeting
- //come back home
- 
-
+//Do these tasks in order
+//Clean the house
+//write some codes
+//go for class
+//go for meeting
+//come back home
 
 // setTimeout(writeCode,2500)
 // setTimeout(goToClass,500)
 // setTimeout(goToMeeting,2000)
 // setTimeout(comeBackHome,1000)
 // function cleanHouse(){
-//   return new Promise((resolve,reject) => { 
+//   return new Promise((resolve,reject) => {
 //     setTimeout(()=> {
 //     resolve("clean the house");
 //     },1500);
 //   });
-  
+
 // }
 // function writeCode(callback){
 //   console.log("write some code");
@@ -248,30 +243,37 @@
 
 //checkBox and Radio btn
 
-const myCheckBox = document.getElementById("myCheckBox");
-const visaBtn = document.getElementById("visaBtn");
-const masterCard = document.getElementById("masterCard");
-const payPal = document.getElementById("payPal");
-const submit = document.getElementById("submit");
-const subResult = document.getElementById("subResult");
-const paymentResult =document.getElementById("paymentResult");
+// const myCheckBox = document.getElementById("myCheckBox");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterCard = document.getElementById("masterCard");
+// const payPal = document.getElementById("payPal");
+// const submit = document.getElementById("submit");
+// const subResult = document.getElementById("subResult");
+// const paymentResult = document.getElementById("paymentResult");
 
-submit.onclick = function(){
-  if(myCheckBox.checked){
-    subResult.textContent = " 🎉congratulations you have successfuly subscribed"
-  }else{
-    subResult.textContent ="❗ Oops! you have to subscribe first"
-  }if(visaBtn.checked){
-    paymentResult.textContent = "you are paying with visa"
-  }else if(masterCard.checked){
-    paymentResult.textContent = "you are paying with master card"
-  }else if(payPal.checked){
-    paymentResult.textContent = "you are paying with PayPal"
-  }else{
-    paymentResult.textContent = "you must select a payment method"
-  }
-}
+// submit.onclick = function () {
+//   if (myCheckBox.checked) {
+//     subResult.textContent =
+//       " 🎉congratulations you have successfuly subscribed";
+//   } else {
+//     subResult.textContent = "❗ Oops! you have to subscribe first";
+//   }
+//   if (visaBtn.checked) {
+//     paymentResult.textContent = "you are paying with visa";
+//   } else if (masterCard.checked) {
+//     paymentResult.textContent = "you are paying with master card";
+//   } else if (payPal.checked) {
+//     paymentResult.textContent = "you are paying with PayPal";
+//   } else {
+//     paymentResult.textContent = "you must select a payment method";
+//   }
 
+// };
 
- 
- 
+//tenary Operator= shortcut to if and else statement
+
+let age1= 18;
+let age2= 16;
+let totalAge =(age1/age2)*4;
+let result = (totalAge >= 18) ? "you are old enough to vote" : "you are not old enough to vote";
+console.log(result);

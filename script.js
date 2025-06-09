@@ -272,8 +272,48 @@
 
 //tenary Operator= shortcut to if and else statement
 
-let age1= 18;
-let age2= 16;
-let totalAge =(age1/age2)*4;
-let result = (totalAge >= 18) ? "you are old enough to vote" : "you are not old enough to vote";
-console.log(result);
+// let userName = "theZaraBaby";
+// console.log(userName.charAt(0))
+// console.log(userName.indexOf("a"))
+// console.log(userName.lastIndexOf("a"))
+// console.log(userName.length)
+// console.log(userName.toUpperCase())
+// console.log(userName.toLowerCase())
+// console.log(userName.repeat(4))
+// console.log(userName.startsWith("a"))
+// console.log(userName.endsWith("y"))
+// console.log(userName.includes("Zara"))
+
+// let phoneNumber = "081-062-227-153";
+// phoneNumber= phoneNumber.replace("-", "");
+// console.log(phoneNumber);
+
+// async function getData(){
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     const data = await response.json();
+//     console.log(data);
+// }
+// getData()
+
+
+// fetch("https://jsonplaceholder.typicode.com/posts")
+// .then(response =>response.json())
+// .then(data => console.log(data));
+
+
+let p = new Promise((resolve,reject) => {
+    let num = 3 + 9
+    if(num == 7){
+        resolve("success")
+
+    }else{
+        reject("failed")
+    }
+    
+})
+p.then((message) =>{
+    console.log("this is in the then" + message)
+}).catch((message)=>{
+    console.log("this is in the catch" + message)
+})
+

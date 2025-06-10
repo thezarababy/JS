@@ -301,19 +301,37 @@
 // .then(data => console.log(data));
 
 
-let p = new Promise((resolve,reject) => {
-    let num = 3 + 9
-    if(num == 7){
-        resolve("success")
+// let p = new Promise((resolve,reject) => {
+//     let num = 3 + 9
+//     if(num == 7){
+//         resolve("success")
 
-    }else{
-        reject("failed")
-    }
+//     }else{
+//         reject("failed")
+//     }
     
+// })
+// p.then((message) =>{
+//     console.log("this is in the then" + message)
+// }).catch((message)=>{
+//     console.log("this is in the catch" + message)
+// })
+
+const recordVideoOne = newPromise((resolve,reject) =>{
+    resolve("video 1 recorded")
 })
-p.then((message) =>{
-    console.log("this is in the then" + message)
-}).catch((message)=>{
-    console.log("this is in the catch" + message)
+const recordVideoTwo = newPromise((resolve,reject) =>{
+    resolve("video 2 recorded")
 })
 
+const recordVideoThree = newPromise((resolve,reject) =>{
+    resolve("video 3 recorded")
+})
+
+Promise.all([
+    recordVideoOne,
+    recordVideoTwo,
+    recordVideoThree,
+]).then((messages)=>{
+    console.log(messages);
+})
